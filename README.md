@@ -13,8 +13,8 @@ Para executar este projeto, irá precisar de ter instalado:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <url-do-seu-repositorio-frontend>
-    cd <nome-da-pasta-do-projeto>
+    git clone https://github.com/AlexandreSilva1608/products-app-frontend
+    cd products-app-frontend
     ```
 
 2.  **Instale as dependências:**
@@ -23,11 +23,9 @@ Para executar este projeto, irá precisar de ter instalado:
     ```
 
 3.  **Configure a URL da API:**
-    - A URL da API de backend está definida no ficheiro `src/app/product-list/product-list.component.ts`.
-    - Encontre a variável `private apiUrl` e altere o valor se a sua API estiver a correr numa porta ou endereço diferente.
-    ```typescript
-    private apiUrl = 'http://localhost:8080/api/v1';
-    ```
+    - Crie um arquivo `environment.ts` com base no arquivo `environment.ts.example`.
+    - Configure a URL da API na variável `apiUrl`.
+
 
 4.  **Execute a aplicação:**
     - Certifique-se de que a sua API de backend está a ser executada.
