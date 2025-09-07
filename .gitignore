@@ -41,5 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#Environments
-src/environments/environments.ts
+# Environment
+src/environments/environment.ts
+
