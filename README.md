@@ -1,59 +1,38 @@
-# ProductsApp
+# Product API - Frontend em Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+Esta é a aplicação frontend para o teste técnico, desenvolvida com Angular. A aplicação consome a API de backend para listar produtos, gerir um carrinho de compras e finalizar pedidos.
 
-## Development server
+## Pré-requisitos
 
-To start a local development server, run:
+Para executar este projeto, irá precisar de ter instalado:
 
-```bash
-ng serve
-```
+- Node.js e npm (versão 18 ou superior)
+- Angular CLI (instalado globalmente: `npm install -g @angular/cli`)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Como Rodar a Aplicação
 
-## Code scaffolding
+1.  **Clone o repositório:**
+    ```bash
+    git clone <url-do-seu-repositorio-frontend>
+    cd <nome-da-pasta-do-projeto>
+    ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-```bash
-ng generate component component-name
-```
+3.  **Configure a URL da API:**
+    - A URL da API de backend está definida no ficheiro `src/app/product-list/product-list.component.ts`.
+    - Encontre a variável `private apiUrl` e altere o valor se a sua API estiver a correr numa porta ou endereço diferente.
+    ```typescript
+    private apiUrl = 'http://localhost:8080/api/v1';
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+4.  **Execute a aplicação:**
+    - Certifique-se de que a sua API de backend está a ser executada.
+    - Inicie o servidor de desenvolvimento do Angular:
+    ```bash
+    ng serve
+    ```
+    A aplicação estará disponível em `http://localhost:4200/`.
